@@ -29,7 +29,7 @@ function App() {
   const isAdmin = vaiTro === "QuanTri";
 
   return (
-    <BrowserRouter basename="/React-BookStore">
+    <Router basename="/React-BookStore">
       <Provider store={store}>
         <ToastContainer position="top-right" autoClose={3000} />
           <Routes>
@@ -56,7 +56,7 @@ function App() {
             </Route>         
           </Routes>
       </Provider>
-    </BrowserRouter>
+    </Router>
   );
 }
 export default App;
