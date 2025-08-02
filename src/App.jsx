@@ -29,34 +29,36 @@ function App() {
   const isAdmin = vaiTro === "QuanTri";
 
   return (
-    <Provider store={store}>
-      <ToastContainer position="top-right" autoClose={3000} />
-      <Router>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/store" element={<StorePage />} />
-          <Route path="/login" element={<LoginPage />} />
-          <Route path="/register" element={<RegisterPage />} />
-          <Route path="/books/:id" element={<BookDetailPage />}/>
-          <Route path="/store/history" element={<HistoryPage/>}/>
-          <Route path="/store/science-fiction" element={<SciencePage/>}/>
-          <Route path="/store/lightnovel" element={<LightNovelPage/>}/>
-          <Route path="/store/horror" element={<HorrorPage/>}/>
-          <Route path="/store/learning" element={<LearningPage/>}/>
-          <Route path="/store/softskill" element={<SoftSkillPage/>}/>
-          <Route path="/cart" element={<CartPage/>}/>
-          <Route path="/checkout" element={<Checkout/>}/>
-          <Route path="/profilepage/*" element={<ProfilePage />}>
-            <Route path="userInfo" element={<UserInfo />} />
-            <Route path="orderHistory" element={<OrderHistory/>} />
-            <Route path="orderDetail/:maDonHang" element={<OrderDetail />} />
-          </Route>
-          <Route element={<ProtectedRoute allowedRole="QuanTri" />}>
-            <Route path="/admin" element={ <AdminDashboard />} />
-          </Route>         
-        </Routes>
-      </Router>
-    </Provider>
+    <BrowserRouter basename="/React-BookStore">
+      <Provider store={store}>
+        <ToastContainer position="top-right" autoClose={3000} />
+        <Router>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/store" element={<StorePage />} />
+            <Route path="/login" element={<LoginPage />} />
+            <Route path="/register" element={<RegisterPage />} />
+            <Route path="/books/:id" element={<BookDetailPage />}/>
+            <Route path="/store/history" element={<HistoryPage/>}/>
+            <Route path="/store/science-fiction" element={<SciencePage/>}/>
+            <Route path="/store/lightnovel" element={<LightNovelPage/>}/>
+            <Route path="/store/horror" element={<HorrorPage/>}/>
+            <Route path="/store/learning" element={<LearningPage/>}/>
+            <Route path="/store/softskill" element={<SoftSkillPage/>}/>
+            <Route path="/cart" element={<CartPage/>}/>
+            <Route path="/checkout" element={<Checkout/>}/>
+            <Route path="/profilepage/*" element={<ProfilePage />}>
+              <Route path="userInfo" element={<UserInfo />} />
+              <Route path="orderHistory" element={<OrderHistory/>} />
+              <Route path="orderDetail/:maDonHang" element={<OrderDetail />} />
+            </Route>
+            <Route element={<ProtectedRoute allowedRole="QuanTri" />}>
+              <Route path="/admin" element={ <AdminDashboard />} />
+            </Route>         
+          </Routes>
+        </Router>
+      </Provider>
+    </BrowserRouter>
   );
 }
 export default App;
