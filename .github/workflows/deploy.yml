@@ -28,4 +28,4 @@ jobs:
         context: .
         file: ./Dockerfile
         push: true
-        tags: minhfresher/react-bookstore:latest
+        tags: minhfresh/react-bookstore:latest
