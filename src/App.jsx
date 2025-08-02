@@ -1,5 +1,5 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { HashRouter } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+
 import { Provider } from 'react-redux';
 import { store } from './redux/store';
 import 'react-toastify/dist/ReactToastify.css';
@@ -32,7 +32,7 @@ function App() {
   return (
       <Provider store={store}>
         <ToastContainer position="top-right" autoClose={3000} />
-        <HashRouter basename="/React-BookStore/">
+        <Router>
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/store" element={<StorePage />} />
@@ -56,7 +56,7 @@ function App() {
               <Route path="/admin" element={ <AdminDashboard />} />
             </Route>         
           </Routes>
-        </HashRouter>
+        </Router>
       </Provider>
   );
 }
