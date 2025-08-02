@@ -56,7 +56,7 @@ export default function HomePage (){
                     left: 0,
                     right: 0,
                     bottom: 0,
-                    backgroundImage: `url("ad/background1.png")`,
+                    backgroundImage: `url("ad/background2.png")`,
                     backgroundRepeat: 'no-repeat',
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
