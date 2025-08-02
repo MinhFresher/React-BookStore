@@ -9,6 +9,7 @@ export default function HomePage (){
     return(
         <>
             <div className="header">
+                <p>hello</p>
                 <div className="h-task">
                     <p className="h-text">MEMBERSHIP</p>
                     <div className="h-box">
