@@ -29,9 +29,9 @@ function App() {
   const isAdmin = vaiTro === "QuanTri";
 
   return (
-    <Router basename="/React-BookStore">
       <Provider store={store}>
         <ToastContainer position="top-right" autoClose={3000} />
+        <Router basename="/React-BookStore">
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/store" element={<StorePage />} />
@@ -55,8 +55,8 @@ function App() {
               <Route path="/admin" element={ <AdminDashboard />} />
             </Route>         
           </Routes>
+        </Router>
       </Provider>
-    </Router>
   );
 }
 export default App;
