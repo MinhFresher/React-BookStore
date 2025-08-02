@@ -6,10 +6,10 @@ RUN npm install
 COPY . .
 
 # Stage 2: Build the React app
+# Stage 2: Build the React app
 FROM base AS build
-# Don't set VITE_BASE for Docker deployment
-ENV NODE_ENV=production
-RUN npm run build
+# Build in development mode to get base: '/'
+RUN npm run build -- --mode development
 
 # Stage 3: Production with Nginx
 FROM nginx:alpine 
