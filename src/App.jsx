@@ -31,7 +31,7 @@ function App() {
   return (
       <Provider store={store}>
         <ToastContainer position="top-right" autoClose={3000} />
-        <Router basename="/React-BookStore">
+        <Router basename="/React-BookStore/">
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/store" element={<StorePage />} />
