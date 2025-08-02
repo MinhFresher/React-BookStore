@@ -1,0 +1,87 @@
+.book-card {
+  display: flex;
+  align-items: flex-start;
+  padding: 20px 10px;
+  border-bottom: 1px solid #e0e0e0;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.book-card img {
+  width: 150px;
+  height: auto;
+  margin-right: 15px;
+}
+
+.book-detail {
+  flex-grow: 1;
+}
+
+.book-detail h4 {
+  margin: 0 0 10px;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.book-status, .price-detail {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  border-bottom: 0.5px solid #c9c9c9;
+}
+
+.book-status p:first-child, .price-detail p:first-child {
+  color: #666;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.status {
+  color: #090;
+}
+.prices{
+    text-align: right;
+}
+.price-detail .price-dis {
+  color: #999;
+  text-decoration: line-through;
+}
+
+.price-detail .price {
+  color: #000;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.book-action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.book-link{
+    display: flex;
+    gap: 10px;
+}
+.book-link p {
+  color: #2e7d32;
+  margin: 0;
+}
+
+.book-link a {
+  color: #2e7d32;
+  text-decoration: none;
+}
+.book-link a:hover{
+  text-decoration: underline;
+}
+button {
+  background-color: #226cb5;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1c86ee;
+}

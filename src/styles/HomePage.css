@@ -1,0 +1,280 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    display: flex;
+    border-bottom: 1px solid #654a34;
+    align-items: center;
+}
+.h-task{
+    display: flex;
+    width: 100%;
+    padding: 0px 10px;
+}
+.h-box{
+    border-left: 1px solid #654a34;
+    border-right: 1px solid #654a34;
+}
+.h-text{
+    letter-spacing: 2px;
+    font-size: 14px;
+    padding: 0px 10px;
+    color:#654a34;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.h-text:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.h-text:active{
+    color: antiquewhite;
+}
+
+.h-nav{
+    display: flex;
+    padding: 0px 20px;
+}
+.h-nav a{
+    white-space: nowrap;
+    letter-spacing: 2px;
+    font-size: 14px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    color:#654a34;
+}
+
+.h-menu{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #654a34;
+    justify-content: space-between;
+}
+.h-menu a{
+    text-decoration: none;
+    padding: 0px 10px;
+}
+.h-menu img{
+    padding: 0px 10px
+}
+.h-cart{
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    cursor: pointer;
+}
+.h-cart p{
+    letter-spacing: 2px;
+    font-size: 20px;
+    color:#654a34;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.h-cart:hover{
+    background-color:#654a3444 ;
+}
+.h-cart:active{
+    background-color: #e19557;
+}
+
+.h-navigation{
+    margin-top: 20px;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+}
+.h-navigation a{
+    text-decoration: none;
+    padding: 0px 10px;
+    color: #654a34;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.h-navigation a:hover{
+    color: #eb690c;
+    font-weight: bold;
+}
+
+.h-storeNav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+    min-height: 500px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+.h-navBtn {
+    position: relative; 
+    z-index: 2;
+}
+.h-storeNav p{
+    font-size: 45px;
+    padding: 0px 10px;
+    text-align: center;
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+}
+.h-storeNav a{
+    padding: 10px 40px;
+    text-decoration: none;
+    font-size: 30px;
+    border: 3px solid #654a34;
+    border-radius: 45px;
+    color: #654a34;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.h-storeNav a:hover{
+    background-color: #654a34;
+    color: white;
+}
+
+.h-topBooks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 100px;
+}
+.h-topBook{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 400px;
+    height: 270px;
+    gap: 30px;
+    padding: 10px 10px;
+    background-color: rgb(51, 108, 200);
+    color: white;
+}
+.h-topBook img{
+    height: 250px;
+}
+.h-topBook .h-action{
+    text-align: center;
+}
+.h-topBook p{
+    font-size: 35px;
+}
+.h-topBook a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px;
+    background-color: rgba(255, 255, 255, 0.171);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.h-topBook a:hover{
+    background-color: #e19557;
+}
+
+.h-ad{
+    margin-top: 50px;
+    width: 100%;
+}
+.h-ad img{
+    width: 100%;
+}
+
+.h-topCat{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.topcatHeader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+.topcatHeader a{
+    text-decoration: none;
+    font-size: 25px;
+    color: #654a34;
+}
+.topcatHeader a:hover{
+    color:#e19557;
+    font-weight: bold;
+}
+.topcatBooks{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+.catBook{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px 15px;
+}
+.catBook:hover{
+    background-color: rgba(87, 87, 87, 0.228);
+}
+.catBook img{
+    height:420px;
+    z-index: -1;
+}
+.catBook p{
+    text-decoration: none;
+    font-size: 30px;
+    color: #654a34;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.h-author{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.topAuthorHeader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+.topAuthorHeader a{
+    text-decoration: none;
+    font-size: 25px;
+    color: #654a34;
+}
+.topAuthorHeader a:hover{
+    color:#e19557;
+    font-weight: bold;
+}
+.topAuthors{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+.author{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px 15px;
+}
+.author img{
+    height:300px;
+    width: 300px;
+    border: none;
+    border-radius: 50%;
+    z-index: -1;
+}
+.author p{
+    text-decoration: none;
+    font-size: 30px;
+    color: #654a34;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.author:hover{
+    background-color: rgba(87, 87, 87, 0.228);
+}

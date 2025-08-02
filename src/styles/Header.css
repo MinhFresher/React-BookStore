@@ -1,0 +1,148 @@
+.Header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    font-family: system-ui;
+}
+.mainHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+}
+.linkHeader{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.linkHeader a{
+    text-decoration: none;
+    color: #0A2613;
+}
+.linkHeader a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+.linkHeader a:active{
+    color: rgb(255, 153, 0);
+    text-decoration: none;
+}
+
+.navHeader{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.navHeader a{
+    text-decoration: none;
+    color: #0A2613;
+}
+.navItem{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+.navItem img{
+    height: 30px;
+}
+.navItem p{
+    font-weight:500;
+}
+
+.subHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.subHeader .logo img{
+    height: 70px;
+}
+.searchBar{
+    display: flex;
+    align-items: center;
+}
+.searchBar img{
+    height: 30px;
+    background-color: #0A2613;
+    padding: 6px 10px;
+}
+.searchBar img:active{
+    background-color: rgb(255, 136, 0);
+}
+.searchBar input{
+    height: 35px;
+    width: 700px;
+}
+.subHeader .cart{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.subHeader .cart a{
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #0A2613;
+}
+.subHeader .cart:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.subHeader .cart img{
+    height: 50px;
+}
+
+.account-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 6px;
+  padding: 8px;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  border-radius: 6px;
+  overflow: hidden;
+  min-width: 160px;
+  z-index: 999;
+}
+
+.account-dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu a,
+.dropdown-menu button {
+  display: block;
+  padding: 10px 14px;
+  text-decoration: none;
+  color: #333;
+  background: white;
+  border: none;
+  width: 100%;
+  text-align: left;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.dropdown-menu a:hover{
+  background: #f0f0f0;
+}
+.dropdown-menu button:hover {
+    background: rgb(219, 83, 83);
+    color: white;
+}

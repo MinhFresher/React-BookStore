@@ -1,0 +1,18 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    font-family: system-ui;
+}
+
+.navbar a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #0A2613;
+    font-weight: 500;
+}
+.navbar a:hover{
+    text-decoration: underline;
+    transform: scale(1.05);
+}

@@ -1,0 +1,74 @@
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: system-ui;
+}
+.book-cover {
+    width: 200px;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+.book-details {
+    overflow: hidden;
+}
+.book-title {
+    color: #2c3e50;
+    font-size: 30px;
+    margin: 0 0 10px;
+}
+.rating {
+    color: #f1c40f;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.price {
+    font-size: 30px;
+    color: #e74c3c;
+   
+}
+.price del {
+    color: #7f8c8d;
+    margin-right: 10px;
+}
+.button {
+    background-color:#88680f;
+    color: #fff;
+    width: 300px;
+    border: none;
+    padding: 20px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.button:hover {
+    background-color:#d19d0e;
+}
+.overview {
+    clear: both;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+.overview p {
+    color: #34495e;
+    line-height: 1.6;
+}
+
+.Book-describe{
+    display: flex;
+    gap: 10px;
+}
+.Book-describe .book-ad{
+    width: 25%;
+}

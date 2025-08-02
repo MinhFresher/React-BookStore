@@ -1,0 +1,241 @@
+.cart-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  max-width: 1200px;
+  margin: 180px auto 0;
+  text-align: center;
+  padding-bottom: 80px;
+  background: #faf8f5;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 40px 30px;
+  font-family: system-ui;
+}
+
+.cart-container h1 {
+  color: #8b4513;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cart-table {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.cart-table thead th {
+  background: #8b4513;
+  color: white;
+  padding: 20px 15px;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+  position: relative;
+}
+
+.cart-table thead th:first-child {
+  border-top-left-radius: 15px;
+}
+
+.cart-table thead th:last-child {
+  border-top-right-radius: 15px;
+}
+
+.cart-table tbody tr {
+  transition: all 0.3s ease;
+  border-bottom: 1px solid #f1f3f4;
+}
+
+.cart-table tbody tr:hover {
+  background: #f9f7f4;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cart-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.cart-table td {
+  padding: 20px 15px;
+  font-size: 16px;
+  border: none;
+  vertical-align: middle;
+  color: #5d4037;
+  font-weight: 500;
+}
+
+.cart-table img {
+  width: 80px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.cart-table img:hover {
+  transform: scale(1.05);
+}
+
+.remove-btn {
+  background: #d32f2f;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(211, 47, 47, 0.3);
+}
+
+.remove-btn img {
+  width: 18px;
+  height: 18px;
+  filter: brightness(0) invert(1);
+}
+
+.remove-btn:hover {
+  transform: scale(1.1) rotate(5deg);
+  background: #c62828;
+  box-shadow: 0 6px 20px rgba(211, 47, 47, 0.4);
+}
+
+/* Quantity controls */
+.addminus {
+  background: #6d4c41;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  margin: 0 8px;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(109, 76, 65, 0.3);
+}
+
+.addminus:hover {
+  background: #5d4037;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(109, 76, 65, 0.4);
+}
+
+.addminus:active {
+  transform: translateY(0);
+}
+
+.quantity {
+  font-weight: bold;
+  padding: 0 15px;
+  font-size: 18px;
+  color: #5d4037;
+  background: #f5f5f5;
+  border-radius: 8px;
+  padding: 8px 15px;
+  border: 2px solid #e0e0e0;
+}
+
+.checkout-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 15px 40px;
+  background: #8b4513;
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(139, 69, 19, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.checkout-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.checkout-btn:hover::before {
+  left: 100%;
+}
+
+.checkout-btn:hover {
+  background: #a0522d;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 35px rgba(139, 69, 19, 0.4);
+}
+
+/* Empty cart message */
+.cart-container p {
+  font-size: 20px;
+  color: #6c757d;
+  margin: 40px 0;
+  font-style: italic;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .cart-container {
+    width: 98%;
+    margin-top: 120px;
+    padding: 20px 15px;
+  }
+  
+  .cart-container h1 {
+    font-size: 2rem;
+  }
+  
+  .cart-table {
+    font-size: 14px;
+  }
+  
+  .cart-table img {
+    width: 60px;
+    height: 75px;
+  }
+  
+  .cart-table td {
+    padding: 15px 8px;
+  }
+  
+  .addminus {
+    padding: 6px 10px;
+    margin: 0 4px;
+  }
+  
+  .quantity {
+    padding: 6px 10px;
+    font-size: 16px;
+  }
+  
+  .checkout-btn {
+    padding: 12px 30px;
+    font-size: 16px;
+  }
+
+  .remove-btn img{
+    height: 50%;
+    width: 50%;
+  }
+}
