@@ -75,14 +75,14 @@ export default function StorePage (){
             <HeaderStore/>
             <NavigationBar/>
             <div className='advertisment'>
-                <img src="/ad/ad0.png"/>
+                <img src="ad/ad0.png"/>
             </div>
             <div className='slogan'>
                 <p>"Books hold the wisdom of thousands - all you need is the courage 
                     to open one!"</p>
             </div>
             <div className='advertisment'>
-                <img src="/ad/adNav0.png"/>
+                <img src="ad/adNav0.png"/>
             </div>
 
             <div className='Store-title'>
@@ -125,40 +125,40 @@ export default function StorePage (){
             </div>
 
             <div className='advertisment'>
-                <img src="/ad/adNav1.png"/>
+                <img src="ad/adNav1.png"/>
             </div>
 
             <div className='article-list'>
                 <div className='article'>
-                    <img src="/ad/adBox.png" title='Buy it now' />
+                    <img src="ad/adBox.png" title='Buy it now' />
                 </div>
                 <div className='article'>
-                    <img src="/ad/seller.png" title='Buy it now' />
+                    <img src="ad/seller.png" title='Buy it now' />
                 </div>
                 <div className='article'>
-                    <img src="/ad/seller1.png" title='Buy it now' />
+                    <img src="ad/seller1.png" title='Buy it now' />
                 </div>
             </div>
 
             <div className='advertisment'>
-                <img src="/ad/adNav2.png"/>
+                <img src="ad/adNav2.png"/>
             </div>
 
             <div className='best-book-list'>
                 <div className='best-book'>
-                    <img src="/ad/adBox3.png" title='award' />
+                    <img src="ad/adBox3.png" title='award' />
                     <div>
                         <p>The Best Books 2025 Award</p>
                     </div>
                 </div>
                 <div className='best-book'>
-                    <img src="/ad/adBox1.png" title='award' />
+                    <img src="ad/adBox1.png" title='award' />
                     <div>
                         <p>The Biggest Books of Fall 2025: Fiction Edition</p>
                     </div>
                 </div>
                 <div className='best-book'>
-                    <img src="/ad/adBox2.png" title='award' />
+                    <img src="ad/adBox2.png" title='award' />
                     <div>
                         <p>Braving the Blank Page: A Guest Post by Rory Power</p>
                     </div>
@@ -166,7 +166,7 @@ export default function StorePage (){
             </div>
 
             <div className='advertisment'>
-                <img src="/ad/ad3.png"/>
+                <img src="ad/ad3.png"/>
             </div>
 
             <Footer/>
