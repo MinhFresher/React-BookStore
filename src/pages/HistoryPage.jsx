@@ -45,14 +45,14 @@ export default function HistoryPage (){
             <HeaderStore/>
             <NavigationBar/>
             <div className='advertisment'>
-                <img src="/ad/ad0.png"/>
+                <img src="ad/ad0.png"/>
             </div>
             <div className='slogan'>
                 <p>"Books hold the wisdom of thousands - all you need is the courage 
                     to open one!"</p>
             </div>
             <div className='advertisment'>
-                <img src="/ad/adNav0.png"/>
+                <img src="ad/adNav0.png"/>
             </div>
 
             <div className='Store-title'>
@@ -95,7 +95,7 @@ export default function HistoryPage (){
                 </div>
 
                 <div className='cat-books'>
-                    <img src="/ad/ad1.png" title='Buy this now!'/>
+                    <img src="ad/ad1.png" title='Buy this now!'/>
                     <div className='start-line'>
                         <p>Bestsellers</p>
                     </div>
@@ -131,7 +131,7 @@ export default function HistoryPage (){
                 </div>
             </div>
             <div className='advertisment'>
-                <img src="/ad/adNav3.png"/>
+                <img src="ad/adNav3.png"/>
             </div>
             <Footer/>
         </>

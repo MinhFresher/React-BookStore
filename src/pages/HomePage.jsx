@@ -22,7 +22,7 @@ export default function HomePage (){
                     <Link to="profilepage">MY ACCOUNT</Link>
                     ) : (
                         <Link to="/login" className="navItem">
-                            <img src="/icon/account.png" alt="Login" />
+                            <img src="icon/account.png" alt="Login" />
                             <p>LOGIN</p>
                         </Link>
                     )}
@@ -30,12 +30,12 @@ export default function HomePage (){
             </div>
 
             <div className="h-menu">
-                <img src="/logo/logo.png" height={70}/>
+                <img src="logo/logo.png" height={70}/>
 
                 <Link to="/cart">
                     <div className="h-cart">
                         <p>Basket</p>
-                        <img src="/icon/cart.png" height={25} title='cart'/>
+                        <img src="icon/cart.png" height={25} title='cart'/>
                     </div>
                 </Link>
             </div>
@@ -56,7 +56,7 @@ export default function HomePage (){
                     left: 0,
                     right: 0,
                     bottom: 0,
-                    backgroundImage: `url("/ad/background1.png")`,
+                    backgroundImage: `url("ad/background1.png")`,
                     backgroundRepeat: 'no-repeat',
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
@@ -74,26 +74,26 @@ export default function HomePage (){
                         <p>New Release</p>
                         <Link to="/store">Shop Now</Link>
                     </div>
-                    <img src="/bookImage/et1_0.png"/>
+                    <img src="bookImage/et1_0.png"/>
                 </div>
                 <div className='h-topBook' style={{backgroundColor:'#25a746ff'}}>
                     <div className='h-action'>
                         <p>Top Seller</p>
                         <Link to="/store">Shop Now</Link>
                     </div>
-                    <img src="/bookImage/mm_0.png"/>
+                    <img src="bookImage/mm_0.png"/>
                 </div>
                 <div className='h-topBook' style={{backgroundColor:'#c02f03ff'}}>
                     <div className='h-action'>
                         <p>Top Rated</p>
                         <Link to="/store">Shop Now</Link>
                     </div>
-                    <img src="/bookImage/cysec_0.png"/>
+                    <img src="bookImage/cysec_0.png"/>
                 </div>
             </div>
 
             <div className='h-ad'>
-                <Link to="/store"> <img src="/ad/adNav3.png" title='Go claim now'/> </Link>
+                <Link to="/store"> <img src="ad/adNav3.png" title='Go claim now'/> </Link>
             </div>
 
             <div className='h-topCat' id='brand'>
@@ -103,26 +103,26 @@ export default function HomePage (){
                 </div>
                 <div className='topcatBooks'>
                     <div className='catBook'>
-                        <img src="/bookImage/frl1_0.png" />
+                        <img src="bookImage/frl1_0.png" />
                         <p>History</p>
                     </div>
                     <div className='catBook'>
-                        <img src="/bookImage/fsn1_0.png" />
+                        <img src="bookImage/fsn1_0.png" />
                         <p>Legend</p>
                     </div>
                     <div className='catBook'>
-                        <img src="/bookImage/g_0.png" />
+                        <img src="bookImage/g_0.png" />
                         <p>Cooking</p>
                     </div>
                     <div className='catBook'>
-                        <img src="/bookImage/py_0.png" />
+                        <img src="bookImage/py_0.png" />
                         <p>Technology</p>
                     </div>
                 </div>
             </div>
 
             <div className='h-ad'>
-                <Link to="/store"> <img src="/tacgia/ad.png" title='Go claim now'/> </Link>
+                <Link to="/store"> <img src="tacgia/ad.png" title='Go claim now'/> </Link>
             </div>
 
             <div className='h-author' id='author'> 
@@ -133,15 +133,15 @@ export default function HomePage (){
 
                 <div className='topAuthors'>
                     <div className='author'>
-                        <img src="/tacgia/Nasu.png" />
+                        <img src="tacgia/Nasu.png" />
                         <p>Kinoko Nasu</p>
                     </div>
                     <div className='author'>
-                        <img src="/tacgia/Asato.png" />
+                        <img src="tacgia/Asato.png" />
                         <p>Asato Asato</p>
                     </div>
                     <div className='author'>
-                        <img src="/tacgia/gordon.png" />
+                        <img src="tacgia/gordon.png" />
                         <p>Gordon Ramsay</p>
                     </div>
                 </div>

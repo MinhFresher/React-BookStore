@@ -7,27 +7,27 @@ export default function Footer (){
         <div className='f-body'>
             <div className='f-iconlist'>
                 <div className='f-icon'>
-                    <img src="/icon/mobile.png"  />
+                    <img src="icon/mobile.png"  />
                     <p>MOBILE APP</p>
                 </div>
                 <div className='f-icon'>
-                    <img src="/icon/blog.png"  />
+                    <img src="icon/blog.png"  />
                     <p>BLOG</p>
                 </div>
                 <div className='f-icon'>
-                    <img src="/icon/audioB.png"  />
+                    <img src="icon/audioB.png"  />
                     <p>AUDIO BOOK</p>
                 </div>
                 <div className='f-icon'>
-                    <img src="/icon/podcast.png"  />
+                    <img src="icon/podcast.png"  />
                     <p>PODCAST</p>
                 </div>
                 <div className='f-icon'>
-                    <img src="/icon/membership.png"  />
+                    <img src="icon/membership.png"  />
                     <p>MEMBERSHIP</p>
                 </div>
                 <div className='f-icon'>
-                    <img src="/icon/giftcard.png"  />
+                    <img src="icon/giftcard.png"  />
                     <p>GIFTCARDS</p>
                 </div>
             </div>
@@ -66,15 +66,15 @@ export default function Footer (){
                     <p className='linkTitle'>FIND A STORE</p>
                     <div className='f-input'>
                         <input type="text" />
-                        <img src="/icon/right-arrow.png"  title='Find' />
+                        <img src="icon/right-arrow.png"  title='Find' />
                     </div>
                     <p className='linkTitle'>FOLLOW US</p>
                     <div className='f-social-list'>
-                        <img src="/icon/facebook.png"  />
-                        <img src="/icon/twitter.png"  />
-                        <img src="/icon/instar.png"  />
-                        <img src="/icon/tiktok.png"  />
-                        <img src="/icon/youtube.png"  />
+                        <img src="icon/facebook.png"  />
+                        <img src="icon/twitter.png"  />
+                        <img src="icon/instar.png"  />
+                        <img src="icon/tiktok.png"  />
+                        <img src="icon/youtube.png"  />
                     </div>
                 </div>
             </div>

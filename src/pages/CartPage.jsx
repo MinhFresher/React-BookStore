@@ -69,7 +69,7 @@ export default function CartPage(){
                         className="remove-btn"
                         onClick={() => dispatch(removeFromCart(item.maSach))}
                       >
-                        <img src="/icon/bin.png" />
+                        <img src="icon/bin.png" />
                       </button>
                     </td>
                   </tr>

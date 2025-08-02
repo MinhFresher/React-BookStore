@@ -24,9 +24,9 @@ export default function HeaderStore (){
                     {isLoggedIn ? (
                         <div className="account-dropdown">
                             <div className='navItem'>
-                                <img src="/icon/account.png" alt="Account" />
+                                <img src="icon/account.png" alt="Account" />
                                 <p>MY ACCOUNT</p>
-                                <img src="/icon/down-arrow.png" alt="Dropdown" />
+                                <img src="icon/down-arrow.png" alt="Dropdown" />
                             </div>
                             <div className="dropdown-menu">
                                 <Link to="/profilepage">Manage Profile</Link>
@@ -36,13 +36,13 @@ export default function HeaderStore (){
                         </div>
                     ) : (
                         <Link to="/login" className="navItem">
-                            <img src="/icon/account.png" alt="Login" />
+                            <img src="icon/account.png" alt="Login" />
                             <p>LOGIN</p>
                         </Link>
                     )}
                     {'|'}
                     <div className='navItem'>
-                        <img src="/icon/wishlist.png" />
+                        <img src="icon/wishlist.png" />
                         <p>WISHLIST</p>
                     </div>
                 </div>
@@ -51,15 +51,15 @@ export default function HeaderStore (){
             <div className='subHeader'>
                 <div className='logo'>
                     <Link to="/">
-                        <img src="/logo/logo.png"/>
+                        <img src="logo/logo.png"/>
                     </Link>
                 </div>
                 <div className='searchBar'>
                     <input type="text" />
-                    <img src="/icon/search.png"/>
+                    <img src="icon/search.png"/>
                 </div>
                 <div className='cart'>
-                    <img src="/icon/shopping-cart.png"  />
+                    <img src="icon/shopping-cart.png"  />
                     <Link to="/cart">Your Cart</Link>
                 </div>
             </div>

@@ -46,7 +46,7 @@ function BookDetailPage() {
             <button class="button" onClick={handleAddToCart}>ADD TO CART</button>
             <button class="button">FIND IN STORES</button>
           </div>
-          <img src="/ad/adBox.png" className='book-ad' />
+          <img src="ad/adBox.png" className='book-ad' />
         </div>
 
         <div class="overview">

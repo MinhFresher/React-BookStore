@@ -9,7 +9,7 @@ export default function BookCard ({ book }){
   const dispatch = useDispatch(); 
 
   const handleAddToCart = (e) => {
-    e.preventDefault(); // Prevents Link navigation when clicking cart icon
+    e.preventDefault(); 
     dispatch(addToCart(book));
     toast(`${book.tenSach} has been added to cart!`); 
   };
