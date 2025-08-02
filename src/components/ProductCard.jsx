@@ -35,7 +35,7 @@ export default function ProductCard ({ book }){
           </p>
         </div>
         <img
-          src="/icon/add-to-cart.png"
+          src="icon/add-to-cart.png"
           title="add to cart"
           onClick={handleAddToCart} 
         />
