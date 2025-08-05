@@ -6,7 +6,6 @@ RUN npm install
 COPY . .
 
 # Stage 2: Build the React app
-# Stage 2: Build the React app
 FROM base AS build
 # Build in development mode to get base: '/'
 RUN npm run build -- --mode development
