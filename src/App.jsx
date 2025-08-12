@@ -16,6 +16,7 @@ import ProfilePage from "./pages/ProfllePage";
 import UserInfo from "./components/UserInfo";
 import OrderHistory from "./components/OrderHistory";
 import OrderDetail from "./components/OrderDetail"
+import SearchPage from "./pages/SearchPage";
 import AdminDashboard from "./pages/admin/AdminDashboard";
 import HomePage from "./pages/HomePage";
 import HistoryPage from "./pages/HistoryPage";
@@ -46,6 +47,7 @@ function App() {
             <Route path="/store/learning" element={<LearningPage/>}/>
             <Route path="/store/softskill" element={<SoftSkillPage/>}/>
             <Route path="/cart" element={<CartPage/>}/>
+            <Route path="/search" element={<SearchPage/>} />
             <Route path="/checkout" element={<Checkout/>}/>
             <Route path="/profilepage/*" element={<ProfilePage />}>
               <Route path="userInfo" element={<UserInfo />} />

@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+
 import "../styles/Header.css"
 
 export default function HeaderStore (){
@@ -7,7 +8,7 @@ export default function HeaderStore (){
     const handleLogout = () => {
         localStorage.removeItem("token");
         localStorage.removeItem("user");  
-        window.location.href = "/login";  
+        window.location.href = "/#/login";
     };
 
     return(
@@ -55,7 +56,7 @@ export default function HeaderStore (){
                     </Link>
                 </div>
                 <div className='searchBar'>
-                    <input type="text" />
+                    <Link to="/search"><input type="text" placeholder="Search... " /></Link>
                     <img src="icon/search.png"/>
                 </div>
                 <div className='cart'>

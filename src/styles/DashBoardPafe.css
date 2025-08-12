@@ -1,5 +1,6 @@
 .dashboard-wrapper {
   min-height: 100vh;
+  min-width: 1200px;
   background-color: #f3f4f6;
   padding: 24px;
 }
@@ -16,6 +17,7 @@
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
+  text-align: center;
 }
 
 .stat:hover {
@@ -48,12 +50,58 @@
 }
 
 .stats-form .stat:nth-child(4) .d-stat {
-  color: #dc2626;
+  color: #dc2626; 
 }
 
 .Statistic {
-  margin-top: 32px;
+  padding-top: 50px;
+  width: 450px;
+  text-align: center;
+  font-size: 20px;
 }
+
+.top-list{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-book-ad {
+  border: 8px solid transparent; /* make it transparent first */
+  border-radius: 20px;
+  background: linear-gradient(rgb(145, 198, 239), rgb(195, 119, 220)) padding-box,
+              linear-gradient(90deg, #667eea, #764ba2) border-box;
+}
+.book-inlist{
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+  padding-bottom: 10px;
+  color: white;
+  font-size: 20px;
+}
+.book-inlist h3{
+  padding: 8px 0;
+  margin: 0;
+}
+
+.top-cus{
+  border: 8px solid transparent; /* make it transparent first */
+  border-radius: 20px;
+  background: linear-gradient(rgb(145, 198, 239), rgb(195, 119, 220)) padding-box,
+              linear-gradient(90deg, #667eea, #764ba2) border-box;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+  padding-bottom: 10px;
+  color: white;
+  font-size: 20px;
+}
+
 
 /* Responsive design */
 @media (min-width: 640px) {
@@ -67,3 +115,4 @@
     grid-template-columns: repeat(4, 1fr);
   }
 }
+

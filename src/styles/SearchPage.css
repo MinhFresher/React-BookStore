@@ -1,0 +1,43 @@
+.search-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+    color: rgb(190, 103, 5);
+    padding: 20px 0;
+}
+.search-content h2{
+    font-size: 35px;
+}
+.search-content .Gif{
+    width: 400px;
+}
+
+.search-section {
+    text-align: center;
+    width: 100%;
+}
+
+.search-section input {
+    padding: 20px 25px;
+    width: 100%;         
+    max-width: 1200px;    
+    font-size: 20px;
+    border-radius: 45px;
+    border: 1px solid #020202;
+    box-sizing: border-box; 
+}
+.results-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+

@@ -9,3 +9,7 @@ export const login = async (credentials) => {
 export const register = async (data) => {
   return await axios.post(`${API}/register`, data);
 };
+
+export const createUser = async (data) => {
+  return await axios.post(`${API}/create`, data);
+};

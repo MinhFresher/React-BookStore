@@ -29,8 +29,10 @@ function RegisterPage() {
     <div className="register-page">
       <div className="register-container">
         <div className="logo-section">
-          <div className="logo">📚</div>
-          <h1 className="store-name">BookHaven</h1>
+          <div className="logo">
+              <img className='logo-login' src="logo/favicon-logo.png" />
+          </div>
+          <h1 className="store-name">Leaf & Spine</h1>
           <p className="tagline">Your Literary Journey Begins Here</p>
         </div>
 

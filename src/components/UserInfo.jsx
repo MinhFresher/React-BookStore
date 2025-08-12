@@ -51,7 +51,6 @@ export default function UserInfo() {
       await updateNguoiDung(maNguoiDung, form);
       alert("✅ Cập nhật thông tin thành công!");
 
-      // Optional: update `user` too after saving
       setUser((prev) => ({
         ...prev,
         ...form,

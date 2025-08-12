@@ -22,6 +22,11 @@ export default function HistoryPage (){
     const indexOfLastBook = currentPage * booksPerPage;
     const indexOfFirstBook = indexOfLastBook - booksPerPage;
     const currentBooks = books.slice(indexOfFirstBook, indexOfLastBook);
+
+    const handlePageChange = (pageNum) => {
+        if (pageNum < 1 || (books.length > 0 && pageNum > totalPages)) return;
+        setCurrentPage(pageNum);
+    };
     
     useEffect(() => {
         const fetchBooks = async () => {
@@ -38,6 +43,10 @@ export default function HistoryPage (){
         };
 
         fetchBooks();
+    }, [definedCategory.maTheLoai]);
+
+    useEffect(() => {
+        setCurrentPage(1); 
     }, [definedCategory.maTheLoai]);
 
     return(

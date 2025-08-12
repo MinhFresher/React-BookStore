@@ -3,11 +3,13 @@ import { toast } from "react-toastify"
 
 import { getAllNguoiDung, deleteNguoiDung } from "../../services/userService";
 import UserAdminForm from "../../components/UserAdminForm";
+import CreateUserForm from "../../components/CreateUserForm";
 import "../../styles/AdminManagement.css";
 
 export default function UserManagement() {
     const [users, setUsers] = useState([]);
     const [selectedUser, setSelectedUser] = useState();
+    const [showForm, setShowForm] = useState(false);
     const [currentPage, setCurrentPage] = useState(1);
 
     const itemsPerPage = 10;
@@ -43,6 +45,13 @@ export default function UserManagement() {
     return (
         <div className="management-container">
             <h2 className="section-title">👥 Quản lý người dùng</h2>
+            <button className="create-button" onClick={() => { setSelectedUser(null); setShowForm(true); }}>Thêm mới</button>
+            {showForm && (
+                <CreateUserForm
+                    user={null}
+                    onCancel={() => setShowForm(false)}
+                />
+            )}
 
             <table className="admin-table">
                 <thead>

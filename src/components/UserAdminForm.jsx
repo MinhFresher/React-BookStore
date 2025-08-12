@@ -16,7 +16,7 @@ export default function UserAdminForm({ user, onCancel, onUpdated }) {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = async (e) => {
+  const handleUpdate = async (e) => {
     e.preventDefault();
     try {
       await updateNguoiDung(form.maNguoiDung, form);
@@ -33,7 +33,7 @@ export default function UserAdminForm({ user, onCancel, onUpdated }) {
 
   return (
     <div className="overlay-form">
-      <form onSubmit={handleSubmit} className="form-container">
+      <form onSubmit={handleUpdate} className="form-container">
         <h3>📝 Sửa thông tin người dùng</h3>
         <input
           type="text"
@@ -64,8 +64,9 @@ export default function UserAdminForm({ user, onCancel, onUpdated }) {
           placeholder="Địa chỉ"
         />
         <select name="vaiTro" value={form.vaiTro} onChange={onChange}>
-          <option value="NguoiDung">NguoiDung</option>
+          <option value="NhanVien">NhanVien</option>
           <option value="QuanTri">QuanTri</option>
+          <option value="KhachHang">KhachHang</option>
         </select>
         <br />
         <button type="submit">Lưu</button>

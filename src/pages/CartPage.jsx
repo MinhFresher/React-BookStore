@@ -1,11 +1,12 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { Link } from 'react-router-dom';
 import { removeFromCart, increaseQuantity, decreaseQuantity } from '../redux/slices/cartSlice';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 
 import "../styles/CartPage.css"
+import HeaderStore from "../components/HeaderStore";
 import Footer from '../components/Footer';
+
 export default function CartPage(){
   const cartItems = useSelector((state) => state.cart.items);
   const dispatch = useDispatch();
@@ -20,15 +21,15 @@ export default function CartPage(){
     if (isLoggedIn) {
       navigate("/checkout");
     } else {
-      toast.warning("⚠️ Vui lòng đăng nhập để tiếp tục thanh toán!", {
+      toast.warning("Vui lòng đăng nhập để tiếp tục thanh toán!", {
         position: "top-center",
         autoClose: 3000,
       });
     }
   };
   return (
-    
     <>
+      <HeaderStore/>
       <div style={{ padding: '2rem' }}>
         <div className="cart-container">
           <h1>🛒 Your Cart</h1>

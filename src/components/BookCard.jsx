@@ -22,7 +22,7 @@ export default function BookCard ({ book }){
 
   return (
     <div className="book-card">
-      <Link to={`/books/${book.maSach}`} style={{ textDecoration: 'none' }}>
+      <Link to={`/books/${book.maSach}`} style={{ textDecoration: 'none'}}>
         <img src={book.anhBia} alt={book.tenSach} />
       </Link>
       <div className="book-detail">

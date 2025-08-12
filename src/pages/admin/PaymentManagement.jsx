@@ -60,7 +60,7 @@ export default function ThanhToanManagement (){
 
                                 try {
                                     await updateThanhToan(p.maThanhToan, { trangThai: newValue });
-                                    fetchPayments(); // Refresh data if needed
+                                    fetchPayments(); 
                                 } catch (err) {
                                     console.error("❌ Cập nhật trạng thái thất bại:", err);
                                 }

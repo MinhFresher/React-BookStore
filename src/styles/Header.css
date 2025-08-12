@@ -59,6 +59,7 @@
 }
 .subHeader .logo img{
     height: 70px;
+    width: 100%;
 }
 .searchBar{
     display: flex;

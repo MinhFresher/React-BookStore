@@ -40,7 +40,7 @@ export default function TacGiaManagement (){
         <div className="management-container">
             <h2 className="section-title">👥 Quản lý Tác giả</h2>
 
-            <button onClick={() => { setSelectedTacGia(null); setShowForm(true); }}>Thêm mới</button>
+            <button className="create-button" onClick={() => { setSelectedTacGia(null); setShowForm(true); }}>Thêm mới</button>
             {showForm && (
                 <TacGiaForm
                     tacgia={selectedTacGia}

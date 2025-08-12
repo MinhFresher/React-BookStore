@@ -40,7 +40,7 @@ export default function TheLoaiManagement (){
         <div className="management-container">
             <h2 className="section-title">👥 Quản lý Thể loại </h2>
             
-            <button onClick={() => { setSelectedTheLoai(null); setShowForm(true); }}>Thêm mới</button>
+            <button className="create-button" onClick={() => { setSelectedTheLoai(null); setShowForm(true); }}>Thêm mới</button>
             {showForm && (
                 <TheLoaiForm
                     theloai={selectedTheLoai}

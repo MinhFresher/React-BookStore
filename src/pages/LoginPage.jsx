@@ -21,7 +21,7 @@ export default function LoginPage() {
       localStorage.setItem('maNguoiDung', res.data.maNguoiDung);
       localStorage.setItem('vaiTro', res.data.vaiTro);
 
-      if (res.data.vaiTro === "QuanTri") {
+      if (res.data.vaiTro === "QuanTri" || res.data.vaiTro === "NhanVien") {
         navigate("/admin");
       } else {
         navigate("/"); 
@@ -36,8 +36,10 @@ export default function LoginPage() {
     <div className="login-page">
       <div className="login-container">
         <div className="logo-section">
-          <div className="logo">📚</div>
-          <h1 className="store-name">BookHaven</h1>
+          <div className="logo">
+              <img className='logo-login' src="logo/favicon-logo.png" />
+          </div>
+          <h1 className="store-name">Leaf & Spine</h1>
           <p className="tagline">Welcome Back to Your Literary World</p>
         </div>
 

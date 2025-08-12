@@ -18,6 +18,11 @@ export default function LearningPage (){
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
+    const handlePageChange = (pageNum) => {
+        if (pageNum < 1 || (books.length > 0 && pageNum > totalPages)) return;
+        setCurrentPage(pageNum);
+    };
+
     const totalPages = Math.ceil(books.length / booksPerPage);
     const indexOfLastBook = currentPage * booksPerPage;
     const indexOfFirstBook = indexOfLastBook - booksPerPage;
@@ -37,6 +42,10 @@ export default function LearningPage (){
         };
 
         fetchBooks();
+    }, [definedCategory.maTheLoai]);
+    
+    useEffect(() => {
+        setCurrentPage(1); 
     }, [definedCategory.maTheLoai]);
 
     return(

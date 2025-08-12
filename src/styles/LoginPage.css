@@ -9,7 +9,9 @@
   background: linear-gradient(135deg, #2C1810 0%, #4A2C17 25%, #8B4513 50%, #A0522D 75%, #CD853F 100%);
   font-family: 'Inter', sans-serif;
 }
-
+.logo .logo-login{
+  height: 60px;
+}
 .background-gradient {
   position: absolute;
   top: 0;
@@ -97,7 +99,6 @@
   border-radius: 1px;
 }
 
-/* Style your exact login structure */
 .login-container h2 {
   font-family: 'Playfair Display', serif;
   font-size: 2rem;

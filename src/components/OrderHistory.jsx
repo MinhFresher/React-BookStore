@@ -20,22 +20,12 @@ export default function OrderHistory () {
         setCurrentPage(pageNumber);
     };
 
-    const fetchDetails = async (maDonHang) => {
-        try {
-        const details = await getChiTietByDonHang(maDonHang);
-        setOrderDetails((prev) => ({ ...prev, [maDonHang]: details }));
-        setActiveOrderId(maDonHang);
-        } catch (err) {
-        console.error("Failed to fetch order details:", err);
-        }
-    };
-
     useEffect(() => {
         const storedUserId = localStorage.getItem("maNguoiDung");
         console.log("🔍 Retrieved userId in Checkout:", storedUserId);
 
         if (storedUserId) {
-            setUserId(Number(storedUserId)); //  ensure it's a number
+            setUserId(Number(storedUserId)); 
         } else {
             console.warn("❗ No userId found in localStorage.");
         }
@@ -45,19 +35,20 @@ export default function OrderHistory () {
         const fetchOrders = async () => {
             try {
                 console.log("Fetching orders for maNguoiDung:", userId);
-                const res = await getOrdersByUser(userId); 
+                const res = await getOrdersByUser(userId);
                 console.log("Response from backend:", res);
-                setOrders(res);
+                const sortedOrders = res.sort((a, b) => new Date(b.ngayTao) - new Date(a.ngayTao));
+                setOrders(sortedOrders);
             } catch (err) {
                 console.error("Failed to fetch orders:", err);
             }
         };
-        if (userId) fetchOrders(); 
+        if (userId) fetchOrders();
     }, [userId]);
 
     return (
         <div className="order-history">
-            <h2>🧾 My Orders</h2>
+            <h2> My Orders</h2>
             {orders.length === 0 ? (
                 <p>No orders found</p>
             ) : (
