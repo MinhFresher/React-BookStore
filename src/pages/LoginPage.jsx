@@ -21,8 +21,10 @@ export default function LoginPage() {
       localStorage.setItem('maNguoiDung', res.data.maNguoiDung);
       localStorage.setItem('vaiTro', res.data.vaiTro);
 
-      if (res.data.vaiTro === "QuanTri" || res.data.vaiTro === "NhanVien") {
+      if (res.data.vaiTro === "QuanTri") {
         navigate("/admin");
+      } else if (res.data.vaiTro === "NhanVien") {
+        navigate("/employee");
       } else {
         navigate("/"); 
       }

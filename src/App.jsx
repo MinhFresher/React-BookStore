@@ -27,8 +27,6 @@ import LearningPage from "./pages/LearningPage";
 import SoftSkillPage from "./pages/SoftSkillPage";
 
 function App() {
-  const vaiTro = localStorage.getItem("vaiTro"); 
-  const isAdmin = vaiTro === "QuanTri";
 
   return (
       <Provider store={store}>
@@ -54,9 +52,12 @@ function App() {
               <Route path="orderHistory" element={<OrderHistory/>} />
               <Route path="orderDetail/:maDonHang" element={<OrderDetail />} />
             </Route>
-            <Route element={<ProtectedRoute allowedRole="QuanTri" />}>
+            <Route element={<ProtectedRoute allowedRole="QuanTri"/>}>
               <Route path="/admin" element={ <AdminDashboard />} />
-            </Route>         
+            </Route>      
+            <Route element={<ProtectedRoute allowedRole="NhanVien" />}>
+              <Route path="/employee" element={<AdminDashboard />} />
+            </Route>
           </Routes>
         </Router>
       </Provider>
